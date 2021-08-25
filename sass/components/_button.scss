@@ -1,0 +1,128 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: $font-small;
+	color: $font-colour-tertiary;
+	text-decoration: none;
+
+	height: 2.7rem;
+	width: 10.5rem;
+	padding: 0.5rem 2rem;
+	margin: 0.5rem;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 0.75rem 0px 0.75rem 0.75rem;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.03);
+		box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.17);
+	}
+
+	&:active,
+	&:focus {
+		transform: translate(0, 0);
+	}
+
+	&__01 {
+		background-color: $font-colour-secondary;
+
+		&:hover {
+			filter: brightness(1.1);
+
+			&::after {
+				transform: translate(0, 0);
+			}
+		}
+	}
+
+	&__02 {
+		background-color: transparent;
+		border: solid 3px $font-colour-secondary;
+
+		&:hover {
+			background-color: $font-colour-secondary;
+		}
+	}
+}
+
+.btn02 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: $font-colour-tertiary;
+	transition: all 0.4s ease;
+
+	padding-top: 2rem;
+
+	&__arrow {
+		transition: all 0.4s ease;
+		padding-left: 0.1rem;
+	}
+
+	&:hover &__arrow {
+		transform: translateX(0.2rem);
+	}
+
+	&:hover {
+		scale: 1.03;
+		filter: drop-shadow(0px 7px 11px rgba(0, 0, 0, 0.15));
+	}
+
+	&:active,
+	&:focus {
+		transform: translate(0, 0);
+	}
+}
+
+.btn03 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 6%;
+	right: 2.5rem;
+	opacity: 0;
+	overflow: hidden;
+	z-index: 100;
+
+	background-color: $font-colour-secondary;
+	padding: 1rem;
+	border-radius: 30rem;
+	font-size: $font-med;
+	color: $font-colour-tertiary;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s ease;
+
+	&:hover {
+		transform: scale(1.1);
+		filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+	}
+
+	&:active,
+	&:focus {
+		transform: scale(1);
+	}
+}
+
+.btn04 {
+	display: flex;
+	justify-content: flex-start;
+	width: 90%;
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	border-radius: 0.6rem;
+	transition: all 0.2s ease-in-out;
+	// box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+	&:hover {
+		transform: scale(1.1);
+		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+		background-color: $font-colour-secondary;
+		color: $font-colour-tertiary;
+	}
+}
+
+.showBtn {
+	opacity: 1;
+}

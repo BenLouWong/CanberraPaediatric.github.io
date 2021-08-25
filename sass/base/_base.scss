@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 125%; // 20 / 16 = 125%
+	// Default font size for web browsers is 16px
+	// This defines the rem --> in this case, 20px is 1rem
+	scroll-behavior: smooth;
+}
+
+body {
+	box-sizing: border-box; /*border box removes the padding, border and margin from the width/height of the box model */
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	line-height: 1.6;
+	font-family: "Philosopher", sans-serif;
+	color: $font-colour-primary;
+	letter-spacing: 0.063em;
+}

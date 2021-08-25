@@ -1,0 +1,10 @@
+.section {
+	&__services {
+		&--text {
+			color: $font-colour-primary;
+		}
+		&--cards {
+			padding: 1.5rem;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.section {
+	&__FAQ {
+		background-image: url(../../images/hero-faq.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		overflow: hidden;
+
+		padding: 7rem 8rem;
+
+		&--container {
+			flex-direction: column;
+			color: $font-colour-tertiary;
+		}
+
+		&--heading {
+			padding-bottom: 2rem;
+		}
+	}
+}

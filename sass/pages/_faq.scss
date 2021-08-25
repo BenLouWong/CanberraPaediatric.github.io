@@ -1,0 +1,27 @@
+.section {
+	&__faq {
+		padding-top: 10rem;
+	}
+}
+
+.faq {
+	&__left {
+		justify-self: center;
+		align-self: center;
+	}
+	&__right {
+		justify-self: center;
+		align-self: center;
+		background-image: url(../../images/faq.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 90%;
+		height: 30rem;
+	}
+	&__textbox {
+		&--heading {
+			color: $font-colour-secondary;
+		}
+	}
+}

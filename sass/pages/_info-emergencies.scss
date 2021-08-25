@@ -1,0 +1,35 @@
+.section {
+	&__info04 {
+		&--text {
+			align-self: center;
+			justify-self: center;
+		}
+		& a {
+			text-decoration: none;
+			color: $font-colour-primary;
+		}
+		.btn04 {
+			& img {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-image: url(https://images.unsplash.com/photo-1552053831-71594a27632d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=612&q=80);
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+
+				margin: 1.5rem;
+				height: 4.5rem;
+				width: 4.5rem;
+				border-radius: 50%;
+			}
+			&__text {
+				display: flex;
+				flex-direction: column;
+				align-self: center;
+				justify-content: center;
+				margin-bottom: -1rem;
+			}
+		}
+	}
+}

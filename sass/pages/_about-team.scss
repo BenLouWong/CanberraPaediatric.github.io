@@ -1,0 +1,42 @@
+.section {
+	&__banner {
+		position: relative;
+		align-items: center;
+		background-image: url(../../images/hero-team.jpg);
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 17rem;
+		&--heading {
+			position: absolute;
+			top: 8rem;
+			color: $font-colour-tertiary;
+		}
+	}
+	&__team {
+		padding: 2rem;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+}
+
+.team {
+	&__photo {
+		border-radius: 2%;
+		width: 16rem;
+		height: auto;
+		&--01,
+		&--03 {
+			margin-right: 2rem;
+		}
+		&--02 {
+			margin-left: 2rem;
+		}
+	}
+	&__text {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+}

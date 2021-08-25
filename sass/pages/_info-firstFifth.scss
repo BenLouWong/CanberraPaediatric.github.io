@@ -1,0 +1,23 @@
+.section {
+	&__info01 {
+		padding-top: 10rem;
+	}
+}
+
+.info01,
+.info05 {
+	&__left {
+		justify-self: center;
+		align-self: center;
+	}
+	&__right {
+		justify-self: center;
+		align-self: center;
+		background-image: url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 30rem;
+	}
+}

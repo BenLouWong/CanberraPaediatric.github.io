@@ -1,0 +1,37 @@
+.section {
+	&__footer {
+		background-color: #5983a4;
+		color: $font-colour-tertiary;
+		padding: 2rem;
+
+		&--column {
+			justify-self: center;
+			align-self: center;
+		}
+
+		&--column04 {
+			align-self: start;
+		}
+
+		&--content {
+			display: flex;
+			align-items: center;
+			padding: 0.3rem 0;
+			font-size: $font-small;
+			font-family: "Comic Neue", cursive;
+		}
+
+		&--icon {
+			display: flex;
+			align-items: center;
+			padding: 0 0.6rem 0 0;
+			color: $font-colour-secondary;
+
+			&-04 {
+				font-size: 1.5rem;
+				padding: 0 0.6rem 0 0;
+				color: $font-colour-secondary;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.hero {
+	&__slider {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		z-index: 5;
+	}
+
+	&__slides {
+		width: 500%;
+		display: flex;
+		overflow: hidden;
+	}
+
+	&__slide {
+		width: 20%;
+		transition: 1s ease;
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	input {
+		display: none;
+	}
+}
+
+#radio1:checked ~ .slide01 {
+	margin-left: 0;
+}
+
+#radio2:checked ~ .slide01 {
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .slide01 {
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .slide01 {
+	margin-left: -60%;
+}

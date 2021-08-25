@@ -1,0 +1,36 @@
+.nav {
+	&li,
+	a {
+		text-decoration: none;
+		color: $font-colour-primary;
+	}
+
+	&__list {
+		list-style: none;
+		text-decoration: none;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			padding-right: 2.5rem;
+		}
+		&--link {
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				color: $font-colour-secondary;
+			}
+		}
+		&--icon {
+			color: $font-colour-secondary;
+			padding-top: 0.3rem;
+		}
+
+		&--phone {
+			margin-left: 0.3rem;
+		}
+	}
+}

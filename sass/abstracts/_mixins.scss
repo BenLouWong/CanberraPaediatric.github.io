@@ -1,0 +1,8 @@
+@mixin clearfix {
+	//Elements after a floating element will flow around it. Use the "clearfix" hack to fix the problem: https://www.w3schools.com/howto/howto_css_clearfix.asp
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
