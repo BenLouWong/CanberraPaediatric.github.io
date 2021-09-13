@@ -8,7 +8,13 @@
 		z-index: 10;
 		flex-direction: column;
 		color: $font-colour-tertiary;
-		width: 57.4rem;
+		width: 100%;
+
+		&--heading01 {
+			@include respond(tab-port) {
+				font-size: $font-med-large;
+			}
+		}
 
 		&--heading03 {
 			display: flex;
@@ -16,6 +22,10 @@
 			text-align: center;
 			width: 60%;
 			padding-bottom: 1.5rem;
+
+			@include respond(tab-port) {
+				font-size: $font-small;
+			}
 		}
 
 		&--btn {
@@ -23,5 +33,16 @@
 			align-items: center;
 			justify-content: center;
 		}
+	}
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		z-index: 8;
+		background-color: rgba(45, 45, 45, 0.2);
+		background-blend-mode: multiply;
 	}
 }

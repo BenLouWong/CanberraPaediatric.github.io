@@ -1,0 +1,52 @@
+.flex {
+	display: flex;
+
+	&__jc-sb {
+		justify-content: space-between;
+	}
+
+	&__jc-center {
+		justify-content: center;
+	}
+
+	&__ai-center {
+		align-items: center;
+	}
+}
+
+.section {
+	padding: 5rem 12rem 6rem 12rem;
+
+    @include respond(small-desktop){
+        padding: 5rem;
+    }
+
+}
+
+.paragraph {
+	font-family: "Comic Neue", cursive;
+	font-size: $font-small;
+	margin: 1rem 0 1.8rem 0;
+	line-height: 170.5%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+	align-items: start;
+	gap: 2.5rem;
+}
+
+.background-tint {
+	background-color: rgba(45, 45, 45, 0.3);
+	background-blend-mode: multiply;
+}
+
+.background-cream {
+	background-color: $font-colour-four;
+}
+
+.center--heading {
+	flex-direction: column;
+	text-align: center;
+}

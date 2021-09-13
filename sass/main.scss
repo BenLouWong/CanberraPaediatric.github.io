@@ -8,9 +8,12 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/banner";
 @import "components/button";
 @import "components/card";
+@import "components/composition";
 @import "components/footer";
+@import "components/mobileNav";
 @import "components/popup";
 @import "components/slider";
 
@@ -26,8 +29,8 @@
 @import "pages/hero-info";
 @import "pages/hero-services";
 @import "pages/hero";
-@import "pages/home";
 @import "pages/info-athome";
 @import "pages/info-checkup";
 @import "pages/info-emergencies";
 @import "pages/info-firstFifth";
+@import "pages/services";

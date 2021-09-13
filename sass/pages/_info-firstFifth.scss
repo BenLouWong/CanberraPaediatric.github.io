@@ -1,6 +1,10 @@
 .section {
 	&__info01 {
+		position: relative;
 		padding-top: 10rem;
+		@include respond(tab-landscape) {
+			padding-top: 5rem;
+		}
 	}
 }
 
@@ -9,6 +13,7 @@
 	&__left {
 		justify-self: center;
 		align-self: center;
+		z-index: 10;
 	}
 	&__right {
 		justify-self: center;
@@ -21,3 +26,11 @@
 		height: 30rem;
 	}
 }
+
+// .info05 {
+// 	&__right {
+// 		@include respond(tab-landscape) {
+// 			display: none;
+// 		}
+// 	}
+// }

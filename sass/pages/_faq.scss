@@ -1,6 +1,9 @@
 .section {
 	&__faq {
 		padding-top: 10rem;
+		@include respond(tab-landscape) {
+			padding-top: 6rem;
+		}
 	}
 }
 
@@ -10,14 +13,16 @@
 		align-self: center;
 	}
 	&__right {
-		justify-self: center;
-		align-self: center;
 		background-image: url(../../images/faq.jpg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: 90%;
+		width: fit-content;
 		height: 30rem;
+
+		@include respond(tab-landscape) {
+			display: none;
+		}
 	}
 	&__textbox {
 		&--heading {

@@ -11,7 +11,7 @@
 
 		&--point {
 			&:not(&:last-child) {
-				padding-bottom: 0.7rem;
+				padding-bottom: 0.4rem;
 			}
 		}
 		&--heading {
@@ -30,6 +30,10 @@
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 30rem;
+
+		@include respond(small-desktop) {
+			background-position: right;
+		}
 	}
 	&__right {
 		justify-self: center;

@@ -44,6 +44,10 @@
 			background-color: $font-colour-secondary;
 		}
 	}
+
+	&__simple {
+		color: $font-colour-secondary;
+	}
 }
 
 .btn02 {
@@ -53,7 +57,6 @@
 	text-decoration: none;
 	color: $font-colour-tertiary;
 	transition: all 0.4s ease;
-
 	padding-top: 2rem;
 
 	&__arrow {
@@ -107,14 +110,37 @@
 }
 
 .btn04 {
-	display: flex;
+	border-style: none;
+	background-color: transparent;
+	color: $font-colour-primary;
 	justify-content: flex-start;
-	width: 90%;
-	margin-bottom: 1rem;
-	padding-left: 1rem;
+	margin: 1rem;
+	padding: 1rem 2.2rem;
 	border-radius: 0.6rem;
 	transition: all 0.2s ease-in-out;
-	// box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	& img {
+		display: block;
+		align-items: center;
+		justify-content: center;
+		background-image: url(https://images.unsplash.com/photo-1552053831-71594a27632d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=612&q=80);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		margin-right: 1rem;
+		height: 4.5rem;
+		width: 4.5rem;
+		border-radius: 50%;
+	}
+	&__text {
+		display: flex;
+		width: 15rem;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		margin-bottom: -1rem;
+	}
 	&:hover {
 		transform: scale(1.1);
 		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
@@ -123,6 +149,79 @@
 	}
 }
 
+.btn05 {
+	color: $font-colour-primary;
+	font-family: "Philosopher", sans-serif;
+	font-size: $font-med;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	transition: all 0.2s ease;
+	border-style: none;
+	background: transparent;
+	text-align: left;
+	&:hover {
+		background-color: $font-colour-secondary;
+		color: $font-colour-tertiary;
+		cursor: pointer;
+	}
+}
+
+.btn06 {
+	&__info {
+		display: none;
+		color: $font-colour-tertiary;
+
+		@include respond(tab-landscape) {
+			display: flex;
+		}
+	}
+}
+
+.btn07 {
+	&__info {
+		display: none;
+		color: $font-colour-tertiary;
+
+		@include respond(small-desktop) {
+			display: flex;
+		}
+	}
+}
+
 .showBtn {
 	opacity: 1;
+}
+
+.menu {
+	&__btn {
+		text-decoration: none;
+		color: $font-colour-primary;
+		padding: 0.3rem;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			color: $font-colour-tertiary;
+			background-color: $font-colour-secondary;
+		}
+	}
+}
+
+.hamburger {
+	position: fixed;
+	visibility: hidden;
+
+	z-index: 90;
+	top: 2rem;
+	right: 2rem;
+	height: 3rem;
+	width: 3rem;
+
+	font-size: $font-med-large;
+	color: $font-colour-tertiary;
+	background-color: $font-colour-secondary;
+	box-shadow: -1px 5px 12px -1px rgba(0, 0, 0, 0.15);
+
+	@include respond(tab-landscape) {
+		visibility: visible;
+	}
 }

@@ -28,31 +28,69 @@
 						<a href="#" class="nav__item--link">Home</a>
 					</li>
 					<li class="nav__item">
-						<a href="section--1" class="nav__item--link"
-							>About Us</a
-						>
+						<a href="team.html" class="nav__item--link">About Us</a>
 					</li>
 					<li class="nav__item">
-						<a href="section--2" class="nav__item--link"
+						<a href="services.html" class="nav__item--link"
 							>Services</a
 						>
 					</li>
 					<li class="nav__item">
-						<a href="section--3" class="nav__item--link"
+						<a href="info.html" class="nav__item--link"
 							>Information</a
 						>
 					</li>
 					<li class="nav__item">
-						<a href="section--4" class="nav__item--link">FAQ</a>
+						<a href="faq.html" class="nav__item--link">FAQ</a>
 					</li>
 					<li class="nav__item">
 						<div class="nav__item--icon">
 							<ion-icon name="call"></ion-icon>
 						</div>
-
 						<div class="nav__item--phone">02 6285 3166</div>
 					</li>
 				</ul>
+			</nav>
+			<div class="dropdown">
+				<span class="dropdown__icon"
+					><ion-icon name="chevron-down-outline"> </ion-icon
+				></span>
+				<div class="dropdown__menu">
+					<a href="/info__first.html" class="menu__btn">
+						First Visits
+					</a>
+					<a href="/info__checkup.html" class="menu__btn">
+						Dental Checkup
+					</a>
+					<a href="/info__hometreat.html" class="menu__btn">
+						What to do at home
+					</a>
+					<a href="/info__emergency.html" class="menu__btn">
+						Dental Emergencies
+					</a>
+					<a href="/info__special.html" class="menu__btn">
+						Special Needs
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- Mobile header -->
+		<a href="#" class="hamburger flex flex__ai-center flex__jc-center"
+			><ion-icon name="menu-outline"></ion-icon
+		></a>
+
+		<header class="mobile__header">
+			<nav class="mobile__header--menu flex">
+				<a href="" class="mobile__close">
+					<ion-icon name="close-outline"></ion-icon>
+				</a>
+
+				<a href="/index.html" class="mobile__btn"> Home </a>
+				<a href="/team.html" class="mobile__btn"> About Us </a>
+				<a href="/services.html" class="mobile__btn"> Services </a>
+				<a href="/info.html" class="mobile__btn"> Information </a>
+				<a href="/faq.html" class="mobile__btn"> FAQ </a>
 			</nav>
 		</header>
 
@@ -63,40 +101,39 @@
 			<!-- Hero section -->
 			<!-- ------------------- -->
 			<div class="hero flex flex__jc-center flex__ai-center">
-				<div class="overlay"></div>
-				<div class="hero__slider">
-					<div class="hero__slides">
-						<!--radio buttons start-->
-						<input type="radio" name="radio-btn" id="radio1" />
-						<input type="radio" name="radio-btn" id="radio2" />
-						<input type="radio" name="radio-btn" id="radio3" />
-						<input type="radio" name="radio-btn" id="radio4" />
-						<!--radio buttons end-->
-						<!--slide images start-->
+				<div class="hero__wrapper">
+					<div class="hero__overlay"></div>
+					<div class="hero__slider">
+						<div class="hero__slides">
+							<!--radio buttons start-->
+							<input type="radio" name="radio-btn" id="radio1" />
+							<input type="radio" name="radio-btn" id="radio2" />
+							<input type="radio" name="radio-btn" id="radio3" />
+							<input type="radio" name="radio-btn" id="radio4" />
+							<!--radio buttons end-->
+							<!--slide images start-->
 
-						<div class="hero__slide slide01">
-							<img
-								src="https://images.unsplash.com/photo-1611231731916-826fe315c533?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-								alt="slideImage01"
-							/>
-						</div>
-						<div class="hero__slide">
-							<img
-								src="https://images.pexels.com/photos/4266932/pexels-photo-4266932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-								alt="slideImage02"
-							/>
-						</div>
-						<div class="hero__slide">
-							<img
-								src="https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-								alt="slideImage03"
-							/>
-						</div>
-						<div class="hero__slide">
-							<img
-								src="https://images.pexels.com/photos/7502346/pexels-photo-7502346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-								alt="slideImage04"
-							/>
+							<div class="hero__slide hero__slide--01 slide01">
+								<!-- <img src="images/hero.jpg" alt="slideImage01" /> -->
+							</div>
+							<div class="hero__slide hero__slide--02">
+								<!-- <img
+									src="images/hero_slider.jpeg"
+									alt="slideImage02"
+								/> -->
+							</div>
+							<div class="hero__slide hero__slide--03">
+								<!-- <img
+									src="images/hero_slider02.webp"
+									alt="slideImage03"
+								/> -->
+							</div>
+							<div class="hero__slide hero__slide--04">
+								<img
+									src="images/hero_slider03.jpeg"
+									alt="slideImage04"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -111,10 +148,10 @@
 						special needs
 					</h3>
 					<div class="hero__textbox--btn">
-						<a href="#" class="btn btn__01">Contact Us</a>
-						<a href="#section--2" class="btn btn__02"
-							>Our Services</a
-						>
+						<a href="#footer" class="btn btn__01">Contact Us</a>
+						<a href="#section--2" class="btn btn__02">
+							Our Services
+						</a>
 					</div>
 					<div class="hero__btns">
 						<div class="btn__auto auto-btn1"></div>
@@ -139,20 +176,23 @@
 				<div class="section__about--01">
 					<h2 class="heading-2">About Us</h2>
 					<p class="section__about--textbox paragraph">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Maiores harum necessitatibus pariatur facilis ducimus
-						blanditiis vel accusantium quod, ea ullam doloribus
-						porro eos consequatur! Nesciunt maiores vero distinctio
-						et nam. Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Recusandae, amet nam. Dolores error
-						omnis, excepturi, illo officiis id incidunt ex sed
-						deserunt hic nam molestiae amet velit? Ex, fuga harum.
+						Welcome to Canberra Paediatric Dentistry. We were
+						established in 1992 and have been providing Specialist
+						Paediatric Dental services in the ACT and surrounding
+						NSW regions for almost 30 years. Our patients travel
+						from the ACT and all-over regional NSW
 					</p>
 					<p class="section__about--textbox paragraph">
-						Lorem ipsum dolor, sit amet consectetur adipisicing
-						elit. Asperiores, perspiciatis ratione nam illo dolore
-						amet tempore molestiae natus officia? Sunt error rerum
-						vitae, aperiam officiis a eius provident eos quidem?
+						We are specialist dental practitioners dedicated to the
+						oral health of children, teenagers, and those with
+						special needs.
+					</p>
+					<p class="section__about--textbox paragraph">
+						Paediatric dentists are specialist practitioners with
+						advanced training. Training is hospital based and
+						completed in conjunction with an advanced university
+						degree. Paediatric Dentistry is a National Dental Board
+						recognized specialty of dentistry.
 					</p>
 					<div class="section__about--btn">
 						<a href="team.html" class="btn btn__01 btn__01--about"
@@ -180,76 +220,6 @@
 			</section>
 
 			<!-- ------------------- -->
-			<!-- Teams section -->
-			<!-- ------------------- -->
-			<!-- <section
-				class="
-					section section__team
-					center--heading
-					background-tint
-					flex
-				"
-				id="section__team"
-			>
-				<div
-					class="
-						section__team--text
-						center--heading
-						flex flex__ai-center flex__jc-center
-					"
-				>
-					<h2 class="section__team--heading heading-2">
-						Meet the Team
-					</h2>
-					<p class="section__team--textbox paragraph">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Culpa eveniet recusandae, ipsa nobis veritatis aliquam
-						quae sint quo voluptatibus odio sequi molestias, nulla
-						suscipit? Labore non doloremque pariatur maiores vero?
-					</p>
-				</div>
-
-				<div class="section__team--cards grid">
-					<div class="card01 flex flex__ai-center flex__jc-center">
-						<a href="#" class="card01"
-							><img
-								src="images/card01.jpg"
-								alt="Dentist01"
-								class="card01__photo"
-							/>
-							<figcaption class="card01__caption">
-								Dr Jon Doe
-							</figcaption>
-						</a>
-					</div>
-					<div class="card01 flex flex__ai-center flex__jc-center">
-						<a href="#" class="card01"
-							><img
-								src="images/card02.jpg"
-								alt="Dentist02"
-								class="card01__photo"
-							/>
-							<figcaption class="card01__caption">
-								Dr Jon Doe
-							</figcaption>
-						</a>
-					</div>
-					<div class="card01 flex flex__ai-center flex__jc-center">
-						<a href="#" class="card01"
-							><img
-								src="images/card03.jpg"
-								alt="Dentist03"
-								class="card01__photo"
-							/>
-							<figcaption class="card01__caption">
-								Dr Jon Doe
-							</figcaption>
-						</a>
-					</div>
-				</div>
-			</section> -->
-
-			<!-- ------------------- -->
 			<!-- Services section -->
 			<!-- ------------------- -->
 
@@ -273,10 +243,11 @@
 						Our Services
 					</h2>
 					<p class="section__team--textbox paragraph">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Culpa eveniet recusandae, ipsa nobis veritatis aliquam
-						quae sint quo voluptatibus odio sequi molestias, nulla
-						suscipit? Labore non doloremque pariatur maiores vero?
+						Our practice covers all facets of children’s dental
+						care. Our services include but are not limited to:
+						<a href="services.html" class="btn__simple"
+							>Read More</a
+						>
 					</p>
 				</div>
 
@@ -332,7 +303,12 @@
 							</p>
 						</div>
 					</div>
-					<div class="card02 flex flex__ai-center flex__jc-center">
+					<div
+						class="
+							card02 card02__last
+							flex flex__ai-center flex__jc-center
+						"
+					>
 						<div class="card02__container--img">
 							<img
 								src="icons/tooth(2).png"
@@ -366,11 +342,11 @@
 					<p class="section__info--textbox-02 paragraph">
 						We understand the visiting the dentist can be a nervous
 						experience for parents and patients alike. To ease your
-						mind, we have prepared handbook to that details any
-						typical procedures that we might perform.
+						mind, we have prepared a guide to assist you with your
+						child’s first visit.
 					</p>
 					<p class="section__info--textbox-02">
-						Our handbook includes information about:
+						Our guide includes information about:
 					</p>
 					<ul class="section__info--points paragraph">
 						<li class="section__info--point">First Visits</li>
@@ -411,13 +387,9 @@
 						voluptate, maxime quia aut amet numquam ullam totam
 						provident quod commodi quo! Doloremque, numquam!
 					</p>
-					<a href="faq.html" class="section__FAQ--btn btn02"
-						>Read More
-						<ion-icon
-							name="arrow-forward-outline"
-							class="btn02__arrow"
-						></ion-icon
-					></a>
+					<a href="faq.html" class="btn btn__01 section__FAQ--btn"
+						>Read More</a
+					>
 				</div>
 
 				<a href="#" id="btn03" class="btn03 showBtn"
@@ -427,13 +399,13 @@
 		</main>
 
 		<footer>
-			<div class="section__footer grid">
+			<div class="section__footer grid" id="footer">
 				<div class="section__footer--column">
 					Canberra Paediatric Dentistry (Logo TBC)
 				</div>
 				<div class="section__footer--column"></div>
 				<div class="section__footer--column">
-					<div class="heading-4">Contact Us</div>
+					<div class="heading-3">Contact Us</div>
 					<div class="section__footer--content">
 						<div class="section__footer--icon">
 							<ion-icon name="call"></ion-icon>
@@ -458,10 +430,8 @@
 						</div>
 						hello
 					</div>
-				</div>
-				<div class="section__footer--column04">
 					<div class="section__footer--content">
-						<div class="section__footer--icon-04">
+						<div class="section__footer--icon">
 							<ion-icon name="calendar"></ion-icon>
 						</div>
 						<div class="section__footer--content-04">
@@ -470,6 +440,18 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="footer__credits">
+				Icons made by
+				<a
+					href="https://www.flaticon.com/authors/smashicons"
+					title="Smashicons"
+					>Smashicons</a
+				>
+				from
+				<a href="https://www.flaticon.com/" title="Flaticon"
+					>www.flaticon.com</a
+				>
 			</div>
 		</footer>
 
@@ -482,5 +464,6 @@
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
 		<script src="js/script.js"></script>
+		<script src="js/mobile.js"></script>
 	</body>
 </html>

@@ -1,0 +1,19 @@
+.section {
+	&__info03 {
+		&--cards {
+			@include respond(tab-landscape) {
+				display: none;
+			}
+		}
+		@include respond(tab-landscape) {
+			background: linear-gradient(
+					rgba($font-colour-black, 0.3),
+					rgba($font-colour-black, 0.7)
+				),
+				url(https://images.unsplash.com/photo-1631027715604-9b8a704bef67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+			background-position: center;
+			background-size: cover;
+			color: $font-colour-four;
+		}
+	}
+}

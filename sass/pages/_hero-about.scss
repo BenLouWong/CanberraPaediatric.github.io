@@ -3,13 +3,11 @@
 		justify-content: center;
 		&--01 {
 			padding: 0 2rem;
-			// padding-top: 2rem;
-			// background-color: rgb(172, 221, 229);
-		}
-		&--02 {
-			position: relative;
-		}
 
+			@include respond(tab-landscape) {
+				padding: 0;
+			}
+		}
 		&--btn {
 			margin-left: -0.5rem;
 		}
@@ -17,34 +15,6 @@
 			display: flex;
 			align-items: center;
 			justify-self: center;
-		}
-	}
-}
-
-.composition {
-	&__photo {
-		filter: drop-shadow(6px 6px 24px rgba(0, 0, 0, 0.25));
-
-		&--1 {
-			position: absolute;
-			width: 60%;
-			right: 25%;
-			top: 2rem;
-			z-index: 11;
-		}
-		&--2 {
-			position: absolute;
-			width: 35%;
-			top: 5rem;
-			right: 7%;
-			z-index: 12;
-		}
-		&--3 {
-			position: absolute;
-			right: 35%;
-			top: 14rem;
-			width: 28%;
-			z-index: 13;
 		}
 	}
 }

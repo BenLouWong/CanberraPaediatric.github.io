@@ -1,0 +1,46 @@
+.section {
+	&__services {
+		&--container {
+			height: 100vh;
+			width: 30vw;
+			margin-right: 2rem;
+			background-color: $font-colour-four;
+		}
+		&--sidebar {
+			width: 100%;
+			height: 90%;
+			flex-direction: column;
+		}
+		&--imagebox {
+			height: auto;
+			width: 50%;
+		}
+		&--image {
+			width: 100%;
+			height: 100%;
+		}
+		&--textbox {
+			z-index: 10;
+			padding-left: 1rem;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+		&--overlay {
+			visibility: hidden;
+			opacity: 0;
+			z-index: 11;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0 2rem;
+			background-color: $font-colour-four;
+			transition: all 0.5s cubic-bezier(0.68, -0.06, 0.52, 0.95);
+
+			&-active {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+}
