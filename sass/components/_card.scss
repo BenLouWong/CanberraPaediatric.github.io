@@ -14,9 +14,18 @@
 		&--img {
 			width: 6rem;
 			height: 6rem;
+
+			@include respond(phone) {
+				width: 4rem;
+				height: 4rem;
+			}
 		}
 		&--text {
 			padding-top: 1.5rem;
+
+			@include respond(phone) {
+				font-size: $font-very-small;
+			}
 		}
 	}
 
@@ -33,6 +42,9 @@
 	&__last {
 		@include respond(tab-landscape) {
 			display: none;
+		}
+		@include respond(tab-port) {
+			display: flex;
 		}
 	}
 }

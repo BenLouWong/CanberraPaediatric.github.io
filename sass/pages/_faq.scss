@@ -4,6 +4,10 @@
 		@include respond(tab-landscape) {
 			padding-top: 6rem;
 		}
+
+		@include respond(phone) {
+			padding-top: 3rem;
+		}
 	}
 }
 

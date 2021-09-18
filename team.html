@@ -52,7 +52,7 @@
 					</li>
 				</ul>
 			</nav>
-            <div class="dropdown">
+			<div class="dropdown">
 				<span class="dropdown__icon"
 					><ion-icon name="chevron-down-outline"> </ion-icon
 				></span>
@@ -76,7 +76,7 @@
 			</div>
 		</header>
 
-        <a href="#" class="hamburger flex flex__ai-center flex__jc-center"
+		<a href="#" class="hamburger flex flex__ai-center flex__jc-center"
 			><ion-icon name="menu-outline"></ion-icon
 		></a>
 
@@ -86,15 +86,11 @@
 					<ion-icon name="close-outline"></ion-icon>
 				</a>
 
-				<a href="/index.html" class="mobile__btn"> Home </a>
-				<a href="/team.html" class="mobile__btn"> About Us </a>
-				<a href="/services.html" class="mobile__btn">
-					Services
-				</a>
-				<a href="/info.html" class="mobile__btn">
-					Information
-				</a>
-				<a href="/faq.html" class="mobile__btn"> FAQ </a>
+				<a href="index.html" class="mobile__btn"> Home </a>
+				<a href="team.html" class="mobile__btn"> About Us </a>
+				<a href="services.html" class="mobile__btn"> Services </a>
+				<a href="info.html" class="mobile__btn"> Information </a>
+				<a href="faq.html" class="mobile__btn"> FAQ </a>
 			</nav>
 		</header>
 
@@ -105,7 +101,7 @@
 				<h1 class="section__banner--heading heading-1">Our Team</h1>
 			</div>
 			<div class="section section__teams">
-				<div class="section__team section__team-01 flex">
+				<div class="section__team section__team-01 grid">
 					<img
 						src="images/card02.jpg"
 						alt=""
@@ -113,7 +109,10 @@
 					/>
 					<div class="section__team--textbox">
 						<h2 class="team__heading heading-2">Dr Peter Wong</h2>
-                        <h3 class = "team__subheading heading-3">BDS (Hons), MDSc, Dip Clin Dent(sedation), FRACDS, FICD, FADI, FPFA, Juris Doctor</h3>
+						<h3 class="team__subheading heading-3">
+							BDS (Hons), MDSc, Dip Clin Dent(sedation), FRACDS,
+							FICD, FADI, FPFA, Juris Doctor
+						</h3>
 						<p class="team__text paragraph">
 							Peter graduated with a Bachelor’s Degree in
 							Dentistry (Honours) in 1985 and subsequently a
@@ -128,31 +127,36 @@
 							the ACT in 2019.
 						</p>
 						<p class="team__text paragraph">
-							Peter’s interests in dentistry are varied with particular emphasis on management of trauma, dental anomalies and dental sedation
-						</p>
+							Peter’s interests in dentistry are varied with
+							particular emphasis on management of trauma, dental
+							anomalies and dental sedation
 						</p>
 					</div>
 				</div>
-				<div class="section__team section__team-01 flex">
-					<div class="section__team--textbox">
-						<h2 class="team__heading heading-2">Dr Fiona Bell</h2>
-                        <h3 class = "team__subheading heading-3">BDS, MDSc, FICD, FADI</h3>
-						<p class="team__text paragraph">
-							Fiona obtained her Bachelor of Dentistry from the University of Melbourne in 1994 as well as her Master’s Degree in Paediatric Dentistry from the University of Sydney in 2006.
-						</p>
-						<p class="team__text paragraph">
-							She has been at the Canberra Paediatric Dentistry since 2007.
-						</p>
-					</div>
+				<div class="section__team section__team-02 grid">
 					<img
 						src="images/card01.jpg"
 						alt=""
 						class="team__photo team__photo--02"
 					/>
+					<div class="section__team--textbox">
+						<h2 class="team__heading heading-2">Dr Fiona Bell</h2>
+						<h3 class="team__subheading heading-3">
+							BDS, MDSc, FICD, FADI
+						</h3>
+						<p class="team__text paragraph">
+							Fiona obtained her Bachelor of Dentistry from the
+							University of Melbourne in 1994 as well as her
+							Master’s Degree in Paediatric Dentistry from the
+							University of Sydney in 2006.
+						</p>
+						<p class="team__text paragraph">
+							She has been at the Canberra Paediatric Dentistry
+							since 2007.
+						</p>
+					</div>
 				</div>
-				<div
-					class="section__team section__team-01 flex flex__jc-center"
-				>
+				<div class="section__team section__team-03 grid">
 					<img
 						src="images/card03.jpg"
 						alt=""
@@ -251,7 +255,6 @@
 			nomodule
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
-		<script src="js/script.js"></script>
-        <script src="js/mobile.js"></script>
+		<script src="js/mobile.js"></script>
 	</body>
 </html>

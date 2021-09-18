@@ -3,20 +3,26 @@
 		&:not(&:last-child) {
 			padding-bottom: 3rem;
 		}
+		grid-template-columns: 20% auto;
+
+		@include respond(phone) {
+			grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+		}
 	}
 }
 
 .team {
 	&__photo {
 		border-radius: 2%;
-		width: 16rem;
-		height: auto;
-		&--01,
-		&--03 {
-			margin-right: 2rem;
-		}
-		&--02 {
-			margin-left: 2rem;
+		width: auto;
+		height: 20rem;
+
+		margin-right: 2rem;
+
+		@include respond(phone) {
+			height: 10rem;
+			width: auto;
+			margin-right: 0;
 		}
 	}
 	&__text {

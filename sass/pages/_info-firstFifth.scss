@@ -2,8 +2,12 @@
 	&__info01 {
 		position: relative;
 		padding-top: 10rem;
+
 		@include respond(tab-landscape) {
 			padding-top: 5rem;
+		}
+		@include respond(phone) {
+			padding-top: 1rem;
 		}
 	}
 }
@@ -24,6 +28,10 @@
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 30rem;
+
+		@include respond(phone) {
+			height: 10rem;
+		}
 	}
 }
 

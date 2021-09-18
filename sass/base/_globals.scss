@@ -17,10 +17,17 @@
 .section {
 	padding: 5rem 12rem 6rem 12rem;
 
-    @include respond(small-desktop){
-        padding: 5rem;
-    }
+	@include respond(small-desktop) {
+		padding: 5rem;
+	}
 
+	@include respond(tab-port) {
+		padding: 3.5rem;
+	}
+
+	@include respond(phone) {
+		padding: 1.5rem 2rem;
+	}
 }
 
 .paragraph {
@@ -28,6 +35,11 @@
 	font-size: $font-small;
 	margin: 1rem 0 1.8rem 0;
 	line-height: 170.5%;
+
+	@include respond(phone) {
+		font-size: $font-small;
+		margin: 1rem 0;
+	}
 }
 
 .grid {
@@ -35,6 +47,10 @@
 	grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
 	align-items: start;
 	gap: 2.5rem;
+
+	@include respond(phone) {
+		gap: 1rem;
+	}
 }
 
 .background-tint {

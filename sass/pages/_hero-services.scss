@@ -5,6 +5,10 @@
 		}
 		&--cards {
 			padding: 1.5rem;
+
+			@include respond(phone) {
+				padding: 0;
+			}
 		}
 	}
 }

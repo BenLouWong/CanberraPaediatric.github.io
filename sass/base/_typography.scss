@@ -3,12 +3,25 @@
 	letter-spacing: 00.063em;
 	font-weight: 400;
 	padding-bottom: 0.7rem;
+
+	@include respond(tab-port) {
+		font-size: $font-med-large;
+	}
+
+	@include respond(phone) {
+		font-size: $font-med;
+	}
 }
 
 .heading-2 {
 	font-size: $font-med-large;
 	letter-spacing: 00.063em;
 	padding-bottom: 1rem;
+
+	@include respond(phone) {
+		font-size: $font-med;
+		padding-bottom: 0.5rem;
+	}
 }
 
 .heading-3 {
@@ -17,6 +30,14 @@
 	font-weight: bold;
 	letter-spacing: 00.063em;
 	padding-bottom: 1rem;
+
+	@include respond(tab-port) {
+		font-size: $font-small;
+	}
+
+	@include respond(phone) {
+		font-size: $font-small;
+	}
 }
 
 .heading-4 {

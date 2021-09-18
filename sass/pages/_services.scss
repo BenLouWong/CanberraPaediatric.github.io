@@ -5,6 +5,10 @@
 			width: 30vw;
 			margin-right: 2rem;
 			background-color: $font-colour-four;
+
+			@include respond(tab-port) {
+				margin-right: 0.5rem;
+			}
 		}
 		&--sidebar {
 			width: 100%;
@@ -25,6 +29,10 @@
 			width: 100%;
 			overflow: hidden;
 			position: relative;
+
+			@include respond(phone) {
+				padding-left: 0;
+			}
 		}
 		&--overlay {
 			visibility: hidden;
@@ -34,12 +42,16 @@
 			top: 0;
 			left: 0;
 			padding: 0 2rem;
-			background-color: $font-colour-four;
+			background-color: white;
 			transition: all 0.5s cubic-bezier(0.68, -0.06, 0.52, 0.95);
 
 			&-active {
 				visibility: visible;
 				opacity: 1;
+			}
+
+			@include respond(phone) {
+				padding: 0;
 			}
 		}
 	}

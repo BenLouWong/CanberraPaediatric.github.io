@@ -34,6 +34,10 @@
 		@include respond(small-desktop) {
 			background-position: right;
 		}
+
+		@include respond(phone) {
+			display: none;
+		}
 	}
 	&__right {
 		justify-self: center;

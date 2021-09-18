@@ -6,18 +6,10 @@
 		background-attachment: fixed;
 		overflow: hidden;
 
-		padding: 7rem 8rem;
-
 		&--container {
+			text-align: left;
 			flex-direction: column;
 			color: $font-colour-tertiary;
-		}
-
-		&--heading {
-			padding-bottom: 2rem;
-		}
-		&--btn {
-			margin-top: 3rem;
 		}
 	}
 }
