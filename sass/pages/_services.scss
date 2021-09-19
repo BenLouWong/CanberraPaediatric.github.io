@@ -9,6 +9,10 @@
 			@include respond(tab-port) {
 				margin-right: 0.5rem;
 			}
+
+			@include respond(phone) {
+				display: none;
+			}
 		}
 		&--sidebar {
 			width: 100%;
@@ -49,10 +53,31 @@
 				visibility: visible;
 				opacity: 1;
 			}
+		}
+		&--heading {
+			display: flex;
+		}
+	}
+}
 
-			@include respond(phone) {
-				padding: 0;
-			}
+.services {
+	&__card {
+		visibility: hidden;
+		display: none;
+		align-items: center;
+		justify-self: center;
+		justify-content: center;
+		align-self: center;
+		box-shadow: none;
+		background-color: $font-colour-secondary;
+		width: 90%;
+		height: 90%;
+		text-decoration: none;
+		color: $font-colour-tertiary;
+
+		@include respond(phone) {
+			visibility: visible;
+			display: flex;
 		}
 	}
 }
