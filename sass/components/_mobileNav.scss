@@ -1,22 +1,21 @@
 .mobile {
 	&__header {
 		position: fixed;
-		top: 0;
-		right: 0;
+		top: 1rem;
+		right: 1rem;
 		width: 0;
-		height: 100vh;
+		height: 0;
 		z-index: 100;
 		box-shadow: -13px 0px 17px -1px rgba(0, 0, 0, 0.15);
 		overflow: hidden;
 		transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-		z-index: 150;
+		z-index: 90;
 
 		&--menu {
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
 			background: $font-colour-secondary;
-			padding: 3rem;
 			width: 100%;
 			height: inherit;
 
@@ -27,7 +26,10 @@
 		}
 
 		&--active {
+			top: 0;
+			right: 0;
 			width: 30%;
+			height: 100vh;
 
 			@include respond(tab-port) {
 				width: 35%;

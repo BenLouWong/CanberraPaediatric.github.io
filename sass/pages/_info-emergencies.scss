@@ -17,6 +17,10 @@
 		&--btn {
 			justify-content: flex-start;
 
+			@include respond(phone) {
+				display: none;
+			}
+
 			&-wrapper {
 				@include respond(small-desktop) {
 					display: none;

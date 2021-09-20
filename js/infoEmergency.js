@@ -12,7 +12,7 @@ const overlay = document.querySelector(".overlay");
 const emergencyBtnCont = document.querySelector(
 	".section__info04--btn-wrapper"
 );
-const emergencyBtn = document.querySelectorAll(".btn04");
+let emergencyBtn = document.querySelectorAll(".btn04");
 
 /////////////////// Emergency button
 
