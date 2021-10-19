@@ -10,6 +10,10 @@
 	backface-visibility: hidden;
 	overflow: hidden;
 
+	@include respond(phone) {
+		padding: 1.2rem;
+	}
+
 	&__container {
 		&--img {
 			width: 6rem;

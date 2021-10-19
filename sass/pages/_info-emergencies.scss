@@ -1,7 +1,7 @@
 .section {
 	&__info04 {
 		z-index: 5;
-		grid-template-columns: 30% auto;
+		// grid-template-columns: 30% auto;
 
 		@include respond(small-desktop) {
 			grid-template-columns: 100%;
@@ -16,6 +16,7 @@
 		}
 		&--btn {
 			justify-content: flex-start;
+			align-items: flex-start;
 
 			@include respond(phone) {
 				display: none;

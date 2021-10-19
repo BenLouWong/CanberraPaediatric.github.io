@@ -80,4 +80,18 @@
 			display: flex;
 		}
 	}
+	&__list {
+		font-family: "Comic Neue", cursive;
+		font-size: $font-small;
+		margin-left: 1.5rem;
+		&:not(:last-of-type) {
+			padding-bottom: 1.5rem;
+		}
+
+		@include respond(phone) {
+			&:not(:last-of-type) {
+				padding-bottom: 0.5rem;
+			}
+		}
+	}
 }

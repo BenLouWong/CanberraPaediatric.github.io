@@ -21,8 +21,8 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: fit-content;
-		height: 30rem;
+		width: auto;
+		height: 28rem;
 
 		@include respond(tab-landscape) {
 			display: none;

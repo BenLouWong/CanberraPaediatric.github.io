@@ -1,5 +1,4 @@
 .nav {
-    
 	&li,
 	a {
 		text-decoration: none;
@@ -38,11 +37,12 @@
 
 .dropdown {
 	position: fixed;
+	top: 3.5rem;
 	right: 19.8rem;
 	cursor: pointer;
 
 	&:hover &__icon {
-		transform: translateY(0.1rem);
+		transform: translateY(0.2rem);
 		color: $font-colour-secondary;
 	}
 

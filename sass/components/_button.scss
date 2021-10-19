@@ -56,6 +56,11 @@
 	&__simple {
 		color: $font-colour-secondary;
 		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			font-size: $font-small-med;
+		}
 	}
 }
 
@@ -135,6 +140,8 @@
 	border-radius: 0.6rem;
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
+	font-size: $font-small-med;
+
 	& img {
 		display: block;
 		align-items: center;
@@ -151,12 +158,14 @@
 	}
 	&__text {
 		display: flex;
-		width: 15rem;
+		width: 17rem;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
 		margin-bottom: -1rem;
+		padding-right: 1.5rem;
 	}
+
 	&:hover {
 		transform: scale(1.1);
 		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
@@ -168,7 +177,7 @@
 .btn05 {
 	color: $font-colour-primary;
 	font-family: "Philosopher", sans-serif;
-	font-size: $font-med;
+	font-size: $font-small-med;
 	text-decoration: none;
 	padding: 1rem 2rem;
 	transition: all 0.2s ease;
@@ -260,6 +269,7 @@
 		display: flex;
 		align-items: center;
 		margin-right: 0.4rem;
+		color: $font-colour-secondary;
 	}
 	&__btn {
 		display: flex;

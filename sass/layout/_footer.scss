@@ -47,5 +47,9 @@
 			color: $font-colour-tertiary;
 			text-decoration: none;
 		}
+
+		@include respond(phone) {
+			font-size: $font-very-small;
+		}
 	}
 }
